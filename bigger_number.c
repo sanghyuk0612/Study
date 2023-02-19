@@ -4,7 +4,7 @@
 #include <string.h>
 int main(void) {
     int len;
-    int k = 4;
+    int k = 5;
     char a[] = "4177252841";
     
     int b, c;
@@ -22,8 +22,8 @@ int main(void) {
                 k--;
                 break;
             }
-            else if (i== len - 1) {
-                a[i+1] = '0';
+            if (i + 2 == len) {
+                a[i + 1] = '0';
                 k--;
             }
         }
@@ -38,9 +38,9 @@ int main(void) {
             }
         }
         _itoa(f_answer, a, 10);
-        answer = f_answer;
+        answer = atoi(f_answer);
         
     }
     
-    printf("%d",answer);
+    printf("%s",answer);
 }
