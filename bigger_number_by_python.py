@@ -16,7 +16,6 @@ while (k != 0 ):
             break
             
         if (number[i]<number[i+1]):
-            number.pop(i)
             k -=1
             break
         if (i+2==len(number)):
