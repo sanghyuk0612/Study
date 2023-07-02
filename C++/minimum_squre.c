@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-// sizes_rows´Â 2Â÷¿ø ¹è¿­ sizesÀÇ Çà ±æÀÌ, sizes_cols´Â 2Â÷¿ø ¹è¿­ sizesÀÇ ¿­ ±æÀÌÀÔ´Ï´Ù.
+// sizes_rowsëŠ” 2ì°¨ì› ë°°ì—´ sizesì˜ í–‰ ê¸¸ì´, sizes_colsëŠ” 2ì°¨ì› ë°°ì—´ sizesì˜ ì—´ ê¸¸ì´ì…ë‹ˆë‹¤.
 int solution(int** sizes, size_t sizes_rows, size_t sizes_cols) {
     int real_answer[2] = { 0,0 };
     int answer = 0;
