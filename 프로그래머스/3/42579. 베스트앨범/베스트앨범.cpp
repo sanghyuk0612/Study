@@ -27,24 +27,15 @@ int firstnum = 0, secondnum = 0;
 map<int, string, greater<int>> hashnum;
 string firstname, secondname;
 for (auto iter = m.begin(); iter != m.end(); iter++) {
-    //int sum = accumulate(iter->second.begin(), iter->second.end(), 0);
+   
     int sum=0;
     for (auto itr = iter->second.begin(); itr != iter->second.end(); itr++) {
         sum += *itr * 0.01;
     };
     hashnum.insert({ sum, iter->first });
-    //if (firstnum < sum) {
-    //    secondnum = firstnum;
-    //    secondname = firstname;
-    //    firstnum = sum;
-    //    firstname = iter->first;
-    //}
-    //else if (secondnum < sum) {
-    //    secondnum = sum;
-    //    secondname = iter->first;
-    //}
+    
 }
-//cout << "제일 많은 장르 : " <<  firstname << "\n두번쨰로 많은 장르 : "<< secondname << endl;
+
 for (auto iter = m.begin(); iter != m.end(); iter++) {
     for (int j = 0; j < iter->second.size() - 1; j++) {  // vector sorting
         for (int k = 0; k < iter->second.size() - 1; k++) {
@@ -58,7 +49,7 @@ for (auto iter = m.begin(); iter != m.end(); iter++) {
             }
         }
     }
-    //sort(iter->second.begin(), iter->second.end() , greater<int>());
+   
 }
 for (auto iter = hashnum.begin(); iter != hashnum.end(); iter++) {
     if (m.find(iter->second)->second.size() == 1) {
@@ -70,33 +61,6 @@ for (auto iter = hashnum.begin(); iter != hashnum.end(); iter++) {
     }
 }
 
-//if (m.size() == 1) {
-//    if (m.find(firstname)->second.size() == 1) {
-//        answer.push_back(m.find(firstname)->second[0]%100);
-//    }
-//    else {
-//        answer.push_back(m.find(firstname)->second[0] % 100);
-//        answer.push_back(m.find(firstname)->second[1] % 100);
-//    }
-//}
-//else if(m.size() ==0) {
-//}
-//else
-//{
-//    if (m.find(firstname)->second.size() == 1) {
-//        answer.push_back(m.find(firstname)->second[0] % 100);
-//    }
-//    else {
-//        answer.push_back(m.find(firstname)->second[0] % 100);
-//        answer.push_back(m.find(firstname)->second[1] % 100);
-//    }
-//    if (m.find(secondname)->second.size() == 1) {
-//        answer.push_back(m.find(secondname)->second[0] % 100);
-//    }
-//    else {
-//        answer.push_back(m.find(secondname)->second[0] % 100);
-//        answer.push_back(m.find(secondname)->second[1] % 100);
-//    }
-//}
+
 return answer;
 }
