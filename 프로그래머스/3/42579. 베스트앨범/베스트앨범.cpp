@@ -15,7 +15,7 @@ vector<int> solution(vector<string> genres, vector<int> plays) {
     int i=0;
     for (iter = genres.begin(); iter != genres.end(); iter++ ,i++) {
         if (m.find(*iter) != m.end()) {
-            m.find(*iter)->second.push_back(plays[iter - genres.begin()]*100 +i);
+            m.find(*iter)->second.push_back(plays[i]*100 +i);
         }
         else {
             vector<int> tmpvec;
@@ -58,6 +58,7 @@ vector<int> solution(vector<string> genres, vector<int> plays) {
             answer.push_back(m.find(iter->second)->second[1] % 100);
         }
     }
+
+  
     return answer;
 }
-
