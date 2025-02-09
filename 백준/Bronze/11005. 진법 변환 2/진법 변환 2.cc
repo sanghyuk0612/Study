@@ -1,28 +1,22 @@
-#include<iostream>
-#include<string>
-#include<vector>
-#include <algorithm>
-#include<cmath>
+#include <iostream>
 using namespace std;
-int main(void) { 
-	int num;
-	int n;
-	cin >> num;
-	cin >> n;
-	string result="";
-	while (num > 0) {
-		int h = num % n;
-		char c;
-		if (h >= 10) {
-			h -= 10;
-			c = h + 'A';
-			result =  c+ result ;
-		}
-		else
-		{
-			result =  to_string(h)+ result;
-		}
-		num /= n;
-	}
-	cout << result;
+
+int main() {
+	int n1,n2;
+    cin >>n1 >>n2;
+    string result;
+    int tmp;
+    while(n1!=0){
+        tmp=n1%n2;
+        if(tmp>=10){
+            tmp-=10;
+            tmp+='A';
+            result= char(tmp)+result;
+        }
+        else{
+            result=char(tmp+'0')+result;
+        }
+        n1/=n2;
+    }
+    cout << result;
 }
