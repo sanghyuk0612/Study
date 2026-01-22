@@ -1,8 +1,7 @@
 # 🚀 Algorithm Solutions
-> **백준(Baekjoon)** 및 **프로그래머스(Programmers)** 알고리즘 문제 풀이 기록 저장소입니다.
+> **C++**을 이용한 백준(Baekjoon) 및 프로그래머스(Programmers) 알고리즘 문제 풀이 기록 저장소입니다.
 
-기초부터 심화까지, 문제를 해결하며 작성한 소스 코드들을 정리하고 있습니다.  
-효율적인 로직과 클린 코드를 지향합니다.
+단순한 문제 해결을 넘어, 효율적인 메모리 관리와 최적화된 시간 복잡도를 가진 코드를 작성하는 것을 목표로 합니다.
 
 ---
 
@@ -15,23 +14,23 @@
 
 ---
 
-### 🛠️ Languages & Environment
-- **Primary Language:** `Kotlin`, `C++`
-- **Sub Language:** `Python`, `C`
-- **IDE:** IntelliJ IDEA, Android Studio, CLion
+### 🛠️ Development Environment
+- **Language:** `C++` (C++17/20)
+- **IDE & Tools:** - `Visual Studio` (Mainly for heavy debugging)
+  - `VS Code` (Mainly for lightweight coding & testing)
 
 ---
 
 ### 📁 Repository Structure
-문제 출처와 난이도별로 분류된 디렉토리 구조입니다.
+난이도별로 체계적으로 분류하여 관리하고 있습니다.
 
 ```text
 .
 ├── Baekjoon
-│   ├── Gold        # 심화 문제 및 알고리즘 응용
-│   ├── Silver      # 핵심 알고리즘 문제
+│   ├── Gold        # 심화 알고리즘 및 최적화
+│   ├── Silver      # 주요 알고리즘 응용
 │   └── Bronze      # 기초 구현 및 문법 숙달
 └── Programmers
-    ├── Level3      # 고난도 로직 구현
-    ├── Level2      # 주요 알고리즘 응용
+    ├── Level3      # 고난도 로직 및 복합 알고리즘
+    ├── Level2      # 핵심 알고리즘 응용
     └── Level1      # 기초 프로그래밍 및 구현
