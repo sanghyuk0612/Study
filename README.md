@@ -1,7 +1,8 @@
 # 🚀 Algorithm Solutions
 > **백준(Baekjoon)** 및 **프로그래머스(Programmers)** 알고리즘 문제 풀이 기록 저장소입니다.
 
-기초부터 탄탄히 다지며, 효율적인 로직과 클린 코드를 작성하는 것을 목표로 꾸준히 정진하고 있습니다.
+기초부터 심화까지, 문제를 해결하며 작성한 소스 코드들을 정리하고 있습니다.  
+효율적인 로직과 클린 코드를 지향합니다.
 
 ---
 
@@ -10,7 +11,7 @@
 | 서비스 | 프로필 | 링크 |
 | :-- | :-- | :-- |
 | **Baekjoon** | <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=jjy4545" height="150px"> | [Solved.ac Profile](https://solved.ac/jjy4545) |
-| **Programmers** | **Level 1~3 풀이 완료 및 진행 중** | [Programmers Profile](https://programmers.co.kr/) |
+| **Programmers** | **Level 1 ~ 3 풀이 진행 중** | [Programmers Profile](https://programmers.co.kr/) |
 
 ---
 
@@ -22,15 +23,15 @@
 ---
 
 ### 📁 Repository Structure
-문제의 출처와 난이도별로 분류하여 체계적으로 관리합니다.
+문제 출처와 난이도별로 분류된 디렉토리 구조입니다.
 
 ```text
 .
 ├── Baekjoon
-│   ├── Gold        # 심화 알고리즘 및 최적화 문제
-│   ├── Silver      # 주요 알고리즘 응용 문제
-│   └── Bronze      # 구현 및 기초 문법 숙달
-├── Programmers
-│   ├── Level3      # 고난도 로직 및 복합 알고리즘
-│   ├── Level2      # 핵심 알고리즘 응용
-│   └── Level1      # 기초 프로그래밍 및 구현
+│   ├── Gold        # 심화 문제 및 알고리즘 응용
+│   ├── Silver      # 핵심 알고리즘 문제
+│   └── Bronze      # 기초 구현 및 문법 숙달
+└── Programmers
+    ├── Level3      # 고난도 로직 구현
+    ├── Level2      # 주요 알고리즘 응용
+    └── Level1      # 기초 프로그래밍 및 구현
